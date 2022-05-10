@@ -1,0 +1,20 @@
+{
+  "name": "sass",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch scss/style.scss css/style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucasfabianlobo/probandosass.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lucasfabianlobo/probandosass/issues"
+  },
+  "homepage": "https://github.com/lucasfabianlobo/probandosass#readme",
+  "description": ""
+}

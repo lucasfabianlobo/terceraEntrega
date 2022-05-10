@@ -1,0 +1,23 @@
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 90vh;
+  color: white;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../img/fondo-si.jpg");
+
+  background-repeat: no-repeat;
+  background-size: 25px 50px;
+  background-size: cover;
+  background-position: center center;
+}
+
+#hero h1 {
+  color: rgb(236, 227, 227);
+}

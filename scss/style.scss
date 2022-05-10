@@ -1,0 +1,147 @@
+/*******************GENERAL****************/
+@import "variable";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  margin: 0;
+}
+
+/********************MAPS***********************/
+
+$headings: (
+  h1: font-size,
+  3.5rem,
+  h2: font-size,
+  4rem,
+  h3: font-size,
+  3rem,
+  h4: font-size,
+  3rem,
+);
+
+$h1: map-get($sheadings, h1);
+$h2: map-get($sheadings, h2);
+$h3: map-get($sheadings, h3);
+$h4: map-get($sheadings, h4);
+
+p {
+  font-size: 1.25rem;
+}
+ul {
+  list-style: none;
+}
+li {
+  font-size: 1.25rem;
+}
+
+.color-acento {
+  color: $primary-color;
+}
+
+/**********************EXTEND******************/
+
+button {
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 25px 40px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+  color: white;
+  background-color: $primary-color;
+  cursor: pointer;
+
+  &:hover {
+    @extend .button;
+    background-color: rgb(98, 31, 160);
+  }
+}
+
+/*******************INDEX**********************/
+
+.container {
+  max-width: 1400px;
+  margin: auto;
+}
+
+/*******************HEADER*******************/
+
+@import "header";
+
+/***========================COMIENZO CUERPO=============================****/
+
+@import "hero";
+
+/***==================================SOMOS HOREB===========================***/
+
+@import "somosHoreb";
+
+/***========================NUESTROS PRODUCTOS========================***/
+
+@import "nuestrosproductos";
+
+/***===================UBICACION======================***/
+
+#ubicacion .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 90vh;
+
+  ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10vh;
+    text-align: center;
+  }
+}
+
+/***=====================CONTACTO========================***/
+
+#contacto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 60vh;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../img/escritorio.jpg");
+  background-repeat: no-repeat;
+  background-size: 25px 50px;
+  background-size: cover;
+  background-position: center center;
+
+  h2 {
+    color: white;
+  }
+}
+
+/******************************FOOTER*************************/
+
+.container-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 40vh;
+}
+
+.container-footer img,
+p {
+  height: 5vh;
+}
+
+/*******************************TIENDA ONLINE*****************************/
+
+@import "tiendaonline";
+
+/********************************CONTACTO****************************/

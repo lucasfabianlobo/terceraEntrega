@@ -1,0 +1,79 @@
+.nuestros-productos {
+  background-image: url("../img/fondo-product2.jpg");
+  background-repeat: no-repeat;
+  background-size: 25px 50px;
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+
+  .container {
+    padding: 100px 0px;
+  }
+
+  h2 {
+    margin-bottom: 10rem;
+    color: white;
+  }
+
+  h3 {
+    color: white;
+  }
+
+  p {
+    display: none;
+  }
+
+  .productos1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 40vh;
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url("../img/cadena-oro.jpg");
+    background-repeat: no-repeat;
+    background-size: 25px 50px;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .productos2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 40vh;
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url("../img/anillo-oro.jpg");
+    background-repeat: no-repeat;
+    background-size: 25px 50px;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .productos3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 40vh;
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url("../img/reloj.jpg");
+    background-repeat: no-repeat;
+    background-size: 25px 50px;
+    background-size: cover;
+    background-position: center center;
+  }
+}
